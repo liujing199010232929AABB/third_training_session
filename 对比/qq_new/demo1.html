@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动元素撑开父级</title>
+	<style type="text/css">
+		.out {
+			border: 2px solid red;
+			/*overflow: hidden;*/
+			zoom:1;
+			}
+		.clear:after {
+			content:'';
+			display: block;
+			clear:both;
+		}
+		.in {
+			background-color: green;
+			height: 200px;
+			width: 200px;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<div class="out clear">
+		<div class="in"></div>
+	</div>
+</body>
+</html>

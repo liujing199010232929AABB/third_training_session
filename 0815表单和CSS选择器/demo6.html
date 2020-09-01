@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>常用选择器</title>
+	<style>
+		ul{margin:0px;width:550px;border:1px dashed #666;padding:10px 5px;}
+		/*字块撑开父级区块*/
+		ul:after{content:'';display:block;clear:both;}
+		ul li{list-style:none;float:left;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;box-shadow:2px 2px 2px #888;background-color:skyblue;margin:5px;}
+
+		#item1{background-color:coral;}
+
+		.item2{background-color:gold;}
+
+		ul li[class]{background-color:blueviolet;}
+
+		ul li[class="item2"]{background-color:grey;}
+
+		ul li[class^="cat"]{background-color:brown;}
+
+		ul li[class$="pig"]{background-color:red;}
+
+		ul li[class*="t"]{background-color:green;}
+
+		body ul li{border:1px solid black;}
+
+		ul > li[class$="pig"]{background-color:greenyellow;}
+
+		ul > li[class$="pig"] ~ *{background-color:black;color:white;}
+
+		ul > li[class$="pig"] + li{background-color:pink;color:black;}
+
+		h1,p {font-size:2rem;font-weight:lighter;margin:0px;}
+
+		a{font-size:2rem;}
+
+		a:link{color:red;}
+		a:visited{color:orange;}
+		a:focus{color:purple;}
+		a:hover{color:green;}
+		a:active{color:blue;}
+
+
+		ul li:first-child{background-color:#efefef!important;}
+		ul li:last-child{background-color:red;}
+		ul li:nth-child(5){background-color:red;}
+		/*ul li:nth-child(even){background-color:purple!important;}*/
+		ul li:nth-child(odd){background-color:green;}
+		
+		
+		ol :only-child{background-color:lawngreen;}
+		ol li:only-child{background-color:red;}
+
+		ul li:nth-last-child(3){background-color:wheat;}
+
+		ol li:nth-of-type(2) {background-color:wheat;}
+
+		:empty {width:220px;height:270px;background-color:coral;}
+		:empty:after {content:'看到我了吗？亲';}
+		/*:empty:before{content:url("images/dog.jpg");}*/
+		/*:empty:before{content:url("../0814_PHP与HTML的关系/images/apple.jpg");}*/
+		:empty:before{
+			content:"";
+			background-image:url("images/apple.jpg");
+			background-size:100px 100px;
+			position: absolute;
+			width:200px;
+			height:200px;
+			/*z-index: 100;*/
+			top: 425px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- ul>li{$}*10 -->
+	<ul>
+		<li id="item1">1</li>
+		<li class="item2">2</li>
+		<li class="cat dog pig">3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+
+	<h1>CSS选择器大法</h1>
+	<p>CSS选择器非常重要</p>
+	<a href="http://php.cn">PHP中文网</a>
+
+	
+	<ol>
+		<li>列表项1</li>
+	</ol>
+
+
+	<ol>
+		<li>列表项1</li>
+		<li>列表项2</li>
+		<li>列表项3</li>
+	</ol>
+
+	<ol>
+		<li>列表项1</li>
+		<li>列表项2</li>
+		<li>列表项3</li>
+		<li>列表项4</li>
+	</ol>
+
+	<div type="display:block;"></div>
+	
+
+</body>
+</html>

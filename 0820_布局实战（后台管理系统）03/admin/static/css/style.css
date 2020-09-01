@@ -1,0 +1,22 @@
+*{margin:0px;padding:0px;}
+body{background-color:#efefef;}
+li{list-style-type:none;}
+a{text-decoration:none;color:green;}
+a:hover{color:brown;text-decoration-line:underline;}
+
+header{width:100%;background:linear-gradient(to top,lightgrey,#efefef);border-bottom:1px solid gray;overflow:hidden;z-index:99;height:60px;}
+header div{width:1200px;margin:auto;}
+header div h1{float:left;font-weight:lighter;line-height:60px;margin-left:20px;}
+header div nav{float:right;margin-right:20px;}
+header div nav ul li{float:left;padding-left:30px;line-height:80px;}
+
+
+main{width:1000px;height:800px;margin:0px auto;padding-left:200px;overflow:hidden;}
+main article{float:left;width:100%;min-height:100%;}
+
+main aside{float:left;background:linear-gradient(to left,lightgrey,#efefef);border-right:1px solid gray;width:200px;min-height:100%;margin-left:-100%;position:relative;left:-200px;}
+main aside nav{padding:20px 30px;}
+main aside nav li{line-height:2rem;}
+
+main article iframe{min-width:100%;min-height:650px;margin:auto;border:none;}
+main article footer{text-align:center;}

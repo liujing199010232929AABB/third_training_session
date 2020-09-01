@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列布局2:右侧固定,左边主体自适应</title>
+</head>
+<style>
+	.right {
+		width: 200px;
+		height: 600px;
+		background-color: skyblue;
+		float: right;
+	}
+	.main {
+		height: 600px;
+		background-color: cyan; 
+		margin-right: 200px;
+	}
+</style>
+<body>
+	<h4>基本思路:</h4>
+	<p>1.右侧固定宽度,并设置右浮动</p>
+	<p>2.左侧主体仅设置margin-right,将区块向右拉过右侧宽度即可</p>
+	<div class="right">右侧</div>
+	<div class="main">主体</div>
+</body>
+</html>

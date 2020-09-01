@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07圣杯实现三列布局</title>
+	<style type="text/css" media="screen">
+		.header,.footer{width:100%;height:60px;background-color:lightgrey;}
+		.content{width:1000px;min-height:100%;background-color:gray;margin:auto;text-align:center;line-height:60px;}
+		.footer{clear:both;}
+		.container{width:600px;margin:auto;background-color:yellow;}
+		.container .main{width:100%;min-height:650px;background-color:wheat;float:left;}
+		.container .left{width:200px;min-height:650px;background-color:lightgreen;float:left;margin-left:-100%;position:relative;left:-200px;}
+		.container .right{width:200px;min-height:650px;background-color:lightblue;float:left;margin-left:-200px;position:relative;right:-200px;}
+
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="content">头部</div>
+	</div>
+	<!-- 中间主体 -->
+	<div class="container">
+		<div class="main">主体内容</div>
+		<div class="left">左</div>
+		<div class="right">右</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="content">底部</div>
+	</div>
+	
+</body>
+</html>

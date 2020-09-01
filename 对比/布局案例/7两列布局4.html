@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列布局4:左右二列宽度固定[绝对定位]</title>
+</head>
+<style>
+	.container {
+		/*父区块必须设置绝对定位*/
+		position: absolute;
+		left:0;  /*左边起始定位点*/
+		right:0; /*右边起始定位点*/
+		margin: auto; /*左右边距自动挤压,即自动居中*/
+
+		max-width: 960px; /*宽度一定要设置*/
+	}
+	.left {
+		/*设置左边栏定位起始点*/
+		position: absolute;
+		top:0;
+		left:0;
+
+		width: 200px;
+		height: 600px;
+		background-color: skyblue;
+	}
+	.right {
+		/*设置右边栏定位起始点*/
+		position: absolute;
+		top:0;
+		right:0;
+
+		width: 750px;
+		height: 600px;
+		background-color: cyan; 
+	}
+</style>
+<body>
+	<h4>基本思路:</h4>
+	<p>1.要给左右二列添加一个父级区块,并设置定位属性 <br>
+	2.给左右二个区块分别使用绝对定位<br>
+	3.父区块一定要设置宽度width</p>
+
+	<div class="container">
+		<div class="left">左侧</div>
+		<div class="right">右侧</div>
+	</div>
+	
+</body>
+</html>

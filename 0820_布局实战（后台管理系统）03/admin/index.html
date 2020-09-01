@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+	<title>首页</title>
+	
+</head>
+<body>
+	<header role="header">
+		<div>
+			<h1>后台管理系统</h1>
+			<nav>
+				<ul>
+					<li>欢迎管理员：<strong>admin</strong></li>
+					<li><a href="">修改密码</a></li>
+					<li><a href="javascript:;" onclick="logout();">退出登录</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main role="main">
+		<article role="content">
+			<iframe src="welcome.html" name="main"></iframe>
+			<footer role="copyright">
+				<p><a href="https://www.baidu.com">百度</a>&copy;版权所有</p>
+			</footer>
+		</article>
+		<aside role="menu">
+			<nav>
+				<ul>
+					<li><a href="setting.html" target="main">系统设置</a></li>
+					<li><a href="user.html" target="main">用户管理</a></li>
+					<li><a href="article.html" target="main">文档管理</a></li>
+					<li><a href="category.html" target="main">分类管理</a></li>
+					<li><a href="product.html" target="main">产品管理</a></li>
+				</ul>
+			</nav>
+		</aside>
+	</main>
+</body>
+</html>
+
+<script>
+	function logout(){
+		if(window.confirm('是否退出？')){
+			window.location.href='login.html'
+		}else{
+			return false;
+		}
+	}
+</script>

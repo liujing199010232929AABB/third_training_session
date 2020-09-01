@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三列布局1:float+margin</title>
+	<style>
+		.left {
+			width: 200px; 
+			height:600px;
+			background-color: cyan;
+			float:left;  /*左侧向左浮动对齐*/
+		}
+		.right {
+			width: 200px; 
+			height:600px;
+			background-color: cyan;
+			float:right; /*右侧向右浮动对齐*/
+		}
+		.main {
+			height:600px;
+			margin-left: 200px;  /*从左边挤出200px*/
+			margin-right: 200px; /*从右边挤出200px*/
+			background-color: #FD8008;
+		}
+
+	</style>
+</head>
+<body>
+	<h4>基本思路:<span style="color:red">float+margin</span></h4>
+	<p>1.与二列布局极相似 <br>
+	2.左右二列采用浮动+宽度布局<br>
+	3.中间内容区使用margin挤区来<br>
+	4.DOM顺序:<span style="color:red">必须先写二侧,再写主体,否则右侧会被挤下去</span><br>
+	5.二列布局其实也是由它修改而来:去掉右侧.right,并去掉主体中的maring-right即可</p>
+
+	<div class="left">左侧</div>
+	<div class="right">右侧</div>
+	<div class="main">内容</div>
+
+</body>
+</html>

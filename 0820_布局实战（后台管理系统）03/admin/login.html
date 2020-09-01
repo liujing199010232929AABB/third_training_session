@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<style type="text/css" media="screen">
+		body{background-color:#efefef;}
+		table,td{border:none;padding:15px;}
+		table{width:400px;margin:auto;background-color:lightgray;box-shadow:3px 3px 3px #888;border-radius:8px;}
+		table td:first-child{text-align:right;}
+		input[type]{width:150px;height:30px;border:1px solid black;border-radius:5px;padding-left:15px;}
+		table tr:last-child td:last-child{text-align:center;}
+		input[type="submit"]{width:100px;height:36px;background-color:#fff;border:2px solid black;border-radius:8px;}
+		input[type="submit"]:hover{background-color:black;color:white;cursor:pointer;}
+	</style>
+</head>
+<body>
+	<form action="">
+		<table>
+			<caption>用户登录</caption>
+			<tr>
+				<td><label for="email">邮箱：</label></td>
+				<td><input type="email" id="email" placeholder="example@mail.com" required></td>
+			</tr>
+			<tr>
+				<td><label for="password">密码：</label></td>
+				<td><input type="password" id="password" placeholder="******" required></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" name="submit" value="提交" onclick="alert('登录成功');location.href='index.html'">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
